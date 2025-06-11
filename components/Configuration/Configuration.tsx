@@ -37,7 +37,7 @@ export function Configuration({
    return (
       <aside
          className='relative lg:w-96 rounded-xl border border-zinc-200 p-5 flex flex-col gap-5 shadow-sm
-         md:h-[calc(100vh_-_40px)] w-full md:w-80'
+         md:max-h-[calc(100vh_-_40px)] md:overflow-y-auto w-full md:w-80'
       >
          <h1 className='font-medium'>Configuration</h1>
 
