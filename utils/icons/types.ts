@@ -27,6 +27,7 @@ export type Config = {
    icon?: File | string
    text: string
    color: Color
+   filename?: string
 }
 
 export type Canvas = {

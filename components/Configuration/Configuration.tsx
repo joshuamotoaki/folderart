@@ -42,6 +42,20 @@ export function Configuration({
          <h1 className='font-medium'>Configuration</h1>
 
          <div>
+            <label htmlFor='filename' className='text-sm font-medium flex items-center gap-2'>
+               Filename
+            </label>
+
+            <input
+               id='filename'
+               className='h-10 border border-zinc-200 rounded-md px-3 py-2 w-full appearance-none'
+               value={configuration.filename || ''}
+               onChange={(e) => onChangeConfig('filename', e.target.value)}
+               placeholder='Optional: Default value is "icon"'
+            />
+         </div>
+
+         <div>
             <fieldset className='mt-2'>
                <legend className='text-sm font-medium flex items-center gap-2'>OS</legend>
                <div className='flex gap-3 mt-2'>
