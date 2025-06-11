@@ -132,6 +132,16 @@ export function FolderEditor() {
                   >
                      christianvm
                   </a>
+                  . <span className='text-zinc-500'>Modified by</span>{' '}
+                  <a
+                     href='https://github.com/joshuamotoaki'
+                     target='_blank'
+                     rel='noopener noreferrer'
+                     className='underline underline-offset-2'
+                  >
+                     joshuamotoaki
+                  </a>
+                  .
                </p>
 
                <HowToUse os={configuration.os} />
