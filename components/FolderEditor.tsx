@@ -5,7 +5,6 @@ import { Configuration } from '@/components/Configuration'
 import { type Config } from '@/utils/icons'
 import { useDragNDrop, useUpdatePreview } from '@/hooks'
 import { HowToUse } from '@/components/HowToUse'
-import { MACOS_COLORS } from '@/utils/icons/consts'
 import { canvasToPng } from '@/utils/canvasToPng'
 import { canvasToIco } from '@/utils/canvasToIco'
 
@@ -51,11 +50,6 @@ export function FolderEditor() {
       }))
    }
 
-   function onChangeColor() {
-      const currentIdx = MACOS_COLORS.findIndex((color) => color.value === configuration.color)
-      const idx = (currentIdx + 1) % MACOS_COLORS.length
-      onChangeConfig('color', MACOS_COLORS[idx].value)
-   }
 
    function proccessImageFile(file: File) {
       if (file.type.includes('image')) {
@@ -119,7 +113,7 @@ export function FolderEditor() {
                {configuration.filename || 'icon'}.{configuration.os === 'mac-os' ? 'png' : 'ico'}
             </p>
 
-            <Folder loading={loading} canvasRef={canvasRef} onChangeColor={onChangeColor} />
+            <Folder loading={loading} canvasRef={canvasRef} />
 
             <div className='ml-auto flex items-center w-full md:w-auto justify-between md:justify-start gap-5'>
                <p className='text-sm'>

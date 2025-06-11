@@ -129,8 +129,7 @@ export function Configuration({
             </select>
 
             <p className='text-sm text-zinc-500 mt-1 ml-1'>
-               Select an option or{' '}
-               <span className='font-medium text-zinc-700'>click on the folder</span> to change.
+               Select an option to change the folder color.
             </p>
          </div>
 
