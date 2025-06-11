@@ -176,6 +176,19 @@ export function Configuration({
             })}
          </ul>
 
+         <input
+            ref={inputRef}
+            type='file'
+            accept='image/*'
+            onChange={(e) => {
+               const file = e.target.files?.[0]
+               if (file) {
+                  onChangeConfig('icon', file)
+               }
+            }}
+            className='hidden'
+         />
+
          <Button variant='outlined' className='w-full md:mt-auto' onClick={() => openFileExporer()}>
             <FolderIcon className='h-5 w-5 stroke-2' />
             <span>Custom Icon</span>
