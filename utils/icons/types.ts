@@ -1,6 +1,5 @@
 export type Color =
    | 'windows-11-default'
-   
    | 'mac-os-default-dark'
    | 'mac-os-default-light'
    | 'mac-os-green'

@@ -2462,12 +2462,7 @@ export function GridBackground(props: { className?: string }) {
                strokeWidth='1.5093'
             />
             <g filter='url(#filter0_f_5_8)'>
-               <rect
-                  width='1512'
-                  height='981'
-                  stroke='white'
-                  strokeWidth='688'
-               />
+               <rect width='1512' height='981' stroke='white' strokeWidth='688' />
             </g>
             <defs>
                <filter
@@ -2486,10 +2481,7 @@ export function GridBackground(props: { className?: string }) {
                      in2='BackgroundImageFix'
                      result='shape'
                   />
-                  <feGaussianBlur
-                     stdDeviation='128'
-                     result='effect1_foregroundBlur_5_8'
-                  />
+                  <feGaussianBlur stdDeviation='128' result='effect1_foregroundBlur_5_8' />
                </filter>
             </defs>
          </svg>

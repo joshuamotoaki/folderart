@@ -15,13 +15,12 @@ export function Folder({
    return (
       <>
          <button
-            className={loading ? 'hidden' : 'w-[512px] h-auto max-w-[90vw] cursor-pointer outline-none'}
+            className={
+               loading ? 'hidden' : 'w-[512px] h-auto max-w-[90vw] cursor-pointer outline-none'
+            }
             onClick={() => onChangeColor()}
          >
-            <canvas
-               className='w-[512px] max-w-[90vw] h-auto'
-               ref={canvasRef}
-            ></canvas>
+            <canvas className='w-[512px] max-w-[90vw] h-auto' ref={canvasRef}></canvas>
          </button>
 
          {loading && (

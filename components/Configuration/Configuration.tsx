@@ -136,7 +136,7 @@ export function Configuration({
             </select>
          </div>
 
-         <ul className='grid md:grid-cols-6 lg:grid-cols-7 gap-1'>
+         <ul className='grid grid-cols-5 sm:grid-cols-7 gap-1'>
             {defaultIcons.map((icon, i) => {
                const selected = configuration.icon === icon.name
 
